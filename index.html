@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Galeria</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <section id="telaLogin">
+            <h1>Entrar</h1>
+            <p>Faça login para acessar a galeria.</p>
+
+            <form id="formLogin">
+                <div class="campo">
+                    <label for="usuario">Usuário</label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        placeholder="Digite seu usuário"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Entrar</button>
+
+                <p id="mensagem" role="alert"></p>
+            </form>
+        </section>
+
+        <section id="telaGaleria" hidden>
+            <h1>Galeria</h1>
+            <p id="mensagemBoasVindas"></p>
+
+            <p>Login realizado com sucesso!</p>
+
+            <button type="button" id="btnSair">Sair</button>
+        </section>
+    </main>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
